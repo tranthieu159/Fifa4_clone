@@ -1,0 +1,1020 @@
+.app {
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.header__navbar {
+    width: 100%;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Header logo */
+.header__logo {
+    display: block;
+    padding: 14px 0;
+}
+
+.header__logo img {
+    background-color: transparent;
+    text-decoration: none;
+    width: 280px;
+}
+
+/* Header menu text */
+.header__menu {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.header__menu--text .header__menu-list >li > ul > li:hover a,
+.header__menu--text .header__menu-list > li:hover > a {
+    color: #8a4fff;
+}
+
+.header__menu--text .header__menu-list > li > a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.header__menu--text .header__menu-list >li > ul > li a {
+    display: block;
+    line-height: 1.6;
+}
+
+.header__menu-list {
+    list-style: none;
+    display: flex;
+    height: 78px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__menu-item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-right: 42px;
+    position: relative;
+}
+
+.header__menu-icon {
+    font-size: 1.3rem;
+    padding-left: 3px;
+}
+
+.header__menu-item--sub {
+    padding-left: 0;
+}
+
+.header__menu-item:hover .header__menu-item--sub {
+    display: block;
+}
+
+.header__menu-item--sub {
+    position: absolute;
+    background-color: var(--black-color);
+    top: calc(100% + 3px);
+    left: calc(50% - 100px);
+    width: 186px;
+    padding: 22px;
+    border-radius: 3px;
+    list-style: none;
+    display: none;
+    z-index: 200;
+    animation: fadeIn ease-in 0.3s;
+}
+
+.header__menu-item--sub::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 54px;
+    top: -40px;
+    left: 0px;
+}
+
+.header__menu-item--mini-menu {
+    text-decoration: none;
+    line-height: 2.2rem;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.header__menu-item--mini-menu:first-child {
+    margin-top: -4px;
+}
+
+.header__menu-item--mini-menu:last-child {
+    margin-bottom: -4px;
+}
+
+.header__menu-item a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+/* Header menu btn */
+.header__menu--btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu--btn a {
+    color: var(--white-color);
+}
+
+.header__search {
+    position: relative;
+    width: 58px;
+    height: var(--height-btn-s);
+    background-color: #4950fc;
+    display: flex;
+    margin-right: 8px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.header__search-button {
+    position: relative;
+    text-decoration: none;
+    line-height: var(--height-btn-s);
+    display: flex;
+    margin: auto;
+}
+
+.header__search .header__search--form {
+    width: 528px;
+    background-color: #fff;
+}
+
+.header__search-button:focus ~ .header__search--form {
+    display: block;
+}
+
+.header__search--form {
+    position: absolute;
+    top: 0;
+    right: calc(100% + 8px);
+    height: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.header__search--input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 1.4rem;
+    padding: 4px 6px;
+    border-radius: 0;
+    border: 0;
+    text-align: center;
+}
+
+
+.header__search-icon {
+    font-size: 2.6rem;
+}
+
+.header__menu--text-btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: flex;
+    margin: auto;
+}
+
+.header__menu--btn-money {
+    width: 150px;
+    height: var(--height-btn-s);
+    background: linear-gradient(to right, #44cdff 0%, #39ffef 100%);
+    margin-right: 8px;
+    display: flex;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.header__menu--btn-money a {
+    color: var(--black-color);
+}
+
+.header__menu--btn-download {
+    width: 153px;
+    height: var(--height-btn-s);
+    background: linear-gradient(to right, #1b20ff 0%, #c304ff 100%);
+    display: flex;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.header__menu--btn-download .header__menu-icon-down {
+    padding-right: 4px;
+}
+
+/* Nav Mobile */
+.nav__bars-btn {
+    display: none;
+}
+
+.nav__mobile-icon {
+    font-size: 3.6rem;
+}
+
+.nav__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav__mobile {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.nav__mobile-list {
+    padding-top: 16px;
+    padding-left: 16px;
+    list-style: none;
+}
+
+.nav__mobile-link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding-top: 36px;
+    font-size: 3.6rem;
+}
+
+.nav__mobile-close {
+    top: 10px;
+    right: 10px;
+    font-size: 3rem;
+    color: #666;
+    position: absolute;
+}
+
+.nav__input:checked ~ .nav__overlay {
+    display: block;
+}
+
+.nav__input:checked ~ .nav__mobile {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*Container banner */
+.container__banner {
+    margin-top: 78px;
+}
+
+.container__banner--link {
+    display: block;
+    text-decoration: none;
+}
+
+.container__banner--img {
+    width: 100%;
+}
+
+/* Container member */
+.container__member {
+    margin-top: -5px;
+    padding: 24px 0;
+    background: #141c31 url(https://fo4.garena.vn/wp-content/themes/fifa-online-4/img/bg-ctas.png) center center/cover no-repeat;
+}
+
+.container__member-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container__member-list {
+    margin: -16px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container__member-item {
+    width: 100%;
+    height: 72px;
+    margin-top: 30px;
+}
+
+.container__member-link {
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: var(--white-color);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    border-radius: 6px;
+}
+
+.container__member-down {
+    background-image: linear-gradient(to right, #1b20ff 0%, #c404ff 100%);
+}
+
+.container__member-user {
+    background-image: linear-gradient(to right, #094aff 0%, #5277ff 100%);
+}
+
+.container__videos-money,
+.container__member-money {
+    background-image: linear-gradient(to right, #44cdff 0%, #39ffef 100%);
+}
+
+.container__member-icon {
+    font-size: 2.5rem;
+    padding-right: 6px;
+}
+
+.container__member-slider {
+    width: 860px;
+    position: relative;
+}
+
+.container__member-slider--item {
+    height: 309px;
+    margin-top: 14px;
+    margin-left: 24px;
+}
+
+.container__member-silder--link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.container__member-img {
+    display: block;
+    width: 100%;
+    height: 294px;
+}
+
+.container__owl-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 20px;
+    top: calc(100% + 10px);
+}
+.container__owl-dot {
+    display: block;
+    background-color: #7d82ff;
+    border: none;
+    width: 66px;
+    height: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container__member-footer--list {
+    margin: 42px 0 10px 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__member-footer--link {
+    text-decoration: none;
+    margin-right: 4px;
+    width: 182px;
+    height: 61px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8a4fff;
+    background-color: rgba(138,79,255,0.2);
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.container__member-footer--link:last-child {
+    margin-right: -4px;
+}
+
+.container__member-footer--link:hover {
+    background-color: #8a4fff;
+}
+
+.container__member-footer--icon {
+    margin-right: 4px;
+}
+
+/*Container Event */
+.container__events {
+    overflow: hidden;
+    padding: 28px 0 56px;
+    background: #fff url("https://fo4.garena.vn/wp-content/themes/fifa-online-4/img/bg-events.png") center center/cover no-repeat;
+}
+
+.container__events-titles {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container__events-titles--content {
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 24px;
+    margin-bottom: 46px;
+}
+
+.container__events-titles--content::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 192px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: linear-gradient(to right, #fe262c 0%, #007fff 100%);
+}
+
+
+.container__events-box,
+.container__events-box--s {
+    position: relative;
+}
+
+.container__events-item {
+    float: left;
+}
+
+.container__events-link {
+    display: block;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container__events-item--img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container__events-item--name {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin: 14px 0;
+    font-weight: 500;
+}
+
+.container__events-item--description {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.container__events--owl-dots {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    top: calc(100% + 36px);
+}
+
+.container__owl-dot--black {
+    background-color: #000;
+}
+
+.container__owl-dot--white {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.container__events-box .container__events--nav button {
+    position: absolute;
+    width: 38px;
+    height: 142px;
+    background: #000;
+    border: none;
+    top: 90px;
+    cursor: pointer;
+}
+
+.container__events-box .container__events--nav button::before {
+    content: "";
+    position: absolute;
+    border: 20px solid;
+    top: 36%;
+    width: 0;
+    height: 0;
+    border-radius: unset;
+}
+
+.container__events--disabled {
+    opacity: 0.5;
+    left: 0;
+}
+
+.container__events-box .container__events--nav button.container__events--disabled::before {
+    border-color: transparent gray transparent transparent;
+    left: -16px;
+}
+
+.container__events--next {
+    right: 0;
+}
+
+.container__events-box .container__events--nav button.container__events--next::before {
+    border-color: transparent transparent transparent gray;
+    right: -16px;
+}
+
+/* Container News */
+
+
+.container__news-main {
+    padding: 36px 0 50px;
+    background: #151515 url(https://fo4.garena.vn/wp-content/themes/fifa-online-4/img/bg-news.png) center center/cover no-repeat;
+}
+
+.container__news-title {
+    position: relative;
+    color: var(--white-color);
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 2.9rem;
+    font-weight: 400;
+    padding-bottom: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.container__news-title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 190px;
+    height: 4px;
+    background: #fff;
+}
+
+.container__news-tabs--list {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #8a4fff;
+    border-bottom: 1px solid #8a4fff;
+    margin: 0;
+}
+
+.container__news-tabs--link {
+    display: flex;
+    height: 40px;
+    min-width: 214px;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container__news-tabs--link::before {
+    content: "";
+    position: absolute;
+    border-left: 1px solid #8a4fff;
+    top: 50%;
+    left: 0;
+    height: 100%;
+    transform: translateY(-50%);
+}
+
+.container__news-tabs--3::after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #8a4fff;
+    top: 50%;
+    right: 0;
+    height: 100%;
+    transform: translateY(-50%);
+}
+
+.container__news-tabs--active {
+    background-color: #8a4fff;
+}
+
+
+.container__news-tabs--view-more {
+    display: inline-flex;
+    min-width: 214px;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;  
+    position: absolute;
+    right: 0;
+    top: 10%;
+    border: 1px solid;
+    height: 40px;
+}
+
+.container__news-tabs--view-more:hover {
+    border-color: #8a4fff;
+}
+
+.container__news-box {
+    display: flex;
+    margin: 0 -16px;
+}
+
+.container__news-post {
+    margin: 36px 16px;
+    overflow: hidden;
+}
+
+.container__news-post--link {
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    overflow: hidden; 
+    position: relative;
+}
+
+.container__news-post--link:hover .container__news-post--img {
+    transform: scale(1.1);
+}
+
+.container__news-post--img {
+    padding-top: 60%;
+    margin-bottom: -11px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.4s;
+}
+
+.container__news-post--info {
+    background: #323232;
+    width: 100%;
+    padding: 22px;
+    min-height: 230px;
+}
+
+.container__news-post--date {
+    color: #8a4fff;
+    margin: 0;
+}
+
+.container__news-post--title {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.container__news-post--description {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+}
+
+/* Content Pagination */
+
+.container__news-pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-list {
+    margin: 6px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #646465;
+    border-bottom: 1px solid #646465;
+    padding: 2px 0;
+}
+
+.pagination-item {
+    padding-left: 4px;
+}
+
+.pagination-link {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.8rem;
+    line-height: 3.3rem;
+    font-weight: 300;
+    border: 0.5px solid transparent;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+}
+
+.pagination-link--white:hover {
+    border-color: var(--white-color);
+}
+
+.pagination-item--active {
+    color: #8a4fff;
+    border-color: #8a4fff;
+}
+
+/* Container videos */
+.container__videos {
+    background-image: url(https://fo4.garena.vn/wp-content/themes/fifa-online-4/img/bg-videos.png);
+}
+
+.container__videos-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 0;
+}
+
+.container__videos-shop {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.container__videos-shop--title {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    background: linear-gradient(to right, #6d1aac 0%, #390590 100%);
+    width: 264px;
+    height: 60px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    top: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container__videos-shop--slider {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.container__videos-shop--item {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.container__videos-shop--link {
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.container__videos-shop--img {
+    display: block;
+    /* width: 100%; */
+    height: 264px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.container__videos-top {
+    border-bottom: .05208vw solid #dccaff;
+}
+
+.container__videos-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container__videos-item {
+    list-style: none;
+    margin-bottom: 9px;
+}
+
+.container__videos-links {
+    display: flex;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    height: 82px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.container__videos-icon {
+    padding-right: 6px;
+    font-size: 2.4rem;
+}
+
+.container__videos-bookmark {
+    background: linear-gradient(to right, #5f0076 0%, #8a047f 100%);
+}
+
+.container__videos-crown {
+    background: linear-gradient(to right, #1b20ff 0%, #c304ff 100%);
+}
+
+.container__videos-bottom {
+    width: 100%;
+    padding: 10px 0 16px;
+    margin-bottom: 24px;
+}
+
+.container__videos-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+} 
+
+.container__videos-title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 164px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #8a4fff;
+}
+
+.container__videos-main {
+    display: flex;
+}
+
+.container__videos-main--list {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.container__videos-main--list::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+}
+
+.container__videos-main--list::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+    display: none;
+}
+
+.container__videos-main--list::-webkit-scrollbar-thumb:hover {
+    display: block;
+}
+
+
+.container__videos-main--item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.container__videos-main--link {
+    width: 280px;
+    height: 94px;
+    display: block;
+}
+
+.container__videos-main--img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container__videos-main--content {
+    margin-left: 8px;
+    width: 320px;
+}
+
+.container__videos-main--name {
+    --line-height: 2rem;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: var(--line-height);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin-bottom: 4.6px;
+}
+
+.container__videos-main--channel a:hover,
+.container__videos-main--name:hover {
+    color: #8a4fff;
+    cursor: pointer;
+}
+
+.container__videos-main--date {
+    font-size: 1.2rem;
+    margin-top: 8px;
+    margin-bottom: 22px;
+}
+
+.container__videos-main--channel a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    border-top: 1px solid #8a4fff;
+}
+
+.footer__wrap {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 26px 0;
+}
+
+.footer__content {
+    color: rgba(255,255,255,0.3);
+    text-align: justify;
+    font-size: 1.1rem;
+    margin: 0 16px;
+}

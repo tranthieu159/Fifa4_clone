@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Online 4</title>
+    <link rel="icon" href="https://fo4.garena.vn/wp-content/themes/fifa-online-4/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <div class="row ">
+                    <div class="col header__navbar">
+                        <!-- Logo link -->
+                        <div class="header__logo">
+                            <a href="https://fo4.garena.vn/" title="FIFA ONLINE 4 VIỆT NAM" class="header__logo img">
+                                <img src="https://fo4.garena.vn/wp-content/themes/fifa-online-4/img/logo.png" alt="logo fifa online 4">
+                            </a>
+                        </div>
+        
+                        <!-- Header Menu -->
+                        <div class="header__menu">
+    
+                            <!-- Menu text -->
+                            <div class="header__menu--text">
+                                <ul class="header__menu-list">
+                                    <li class="header__menu-item">
+                                        <a href="https://fo4.garena.vn/" aria-current="page">
+                                            TRANG CHỦ
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a href="https://fo4.garena.vn/" aria-current="page">
+                                            TIN TỨC
+                                            <i class="header__menu-icon ti-angle-down"></i>
+                                        </a>
+                                        <ul class="header__menu-item--sub">
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Sự kiện</a>
+                                            </li>
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Vật phẩm</a>
+                                            </li>
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Giải đấu</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a href="https://fo4.garena.vn/" aria-current="page">
+                                            HỌC VIỆN
+                                            <i class="header__menu-icon ti-angle-down"></i>
+                                        </a>
+                                        <ul class="header__menu-item--sub">
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Bản tin cập nhật</a>
+                                            </li>
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Hướng dẫn HLV</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a href="https://fo4.garena.vn/" aria-current="page">
+                                            CÔNG CỤ
+                                            <i class="header__menu-icon ti-angle-down"></i>
+                                        </a>
+                                        <ul class="header__menu-item--sub">
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Hỗ trợ</a>
+                                            </li>
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Ranking</a>
+                                            </li>
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">VIP Member</a>
+                                            </li>
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Reset Pass 2</a>
+                                            </li>
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Nhập code</a>
+                                            </li>
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Khoá TK khẩn cấp</a>
+                                            </li>
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Fanpage Facebook</a>
+                                            </li>
+                                            <li class="header__menu-item--mini-menu">
+                                                <a href="/">Kênh Youtuber</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Menu button -->
+                            <div class="header__menu--btn">
+                                <div class="header__search">
+                                    <a href="" class="header__search-button">
+                                        <span class="header__search-icon ti-search"></span>
+                                    </a>
+                                    <form action="" class="header__search--form">
+                                        <input class="header__search--input" placeholder="Nhập từ khoá..."></input>
+                                    </form>
+                                </div>
+                                <div class="header__menu--btn-money">
+                                    <a href="/" class="header__menu--text-btn">
+                                        <i class="ti-money"></i>
+                                        Nạp FC/MC
+                                    </a>
+                                </div>
+                                <div class="header__menu--btn-download">
+                                    <a href="/" class="header__menu--text-btn">
+                                        <i class="header__menu-icon-down ti-download"></i>
+                                        Tải miễn phí
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nav mobile -->
+                        <label for="nav__mobile-input" class="nav__bars-btn">
+                            <i class="nav__mobile-icon ti-align-justify"></i>
+                        </label>
+
+                        <input type="checkbox" hidden class="nav__input"  id="nav__mobile-input">
+
+                        <label for="nav__mobile-input" class="nav__overlay">
+                        </label>
+
+                        <nav class="nav__mobile">
+                            <label for="nav__mobile-input" class="nav__mobile-close">
+                                <i class="ti-close"></i>
+                            </label>
+                            <ul class="nav__mobile-list">
+                                <li>
+                                    <a href="" class="nav__mobile-link">
+                                        <i class="ti-home"></i>
+                                        Trang Chủ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav__mobile-link">
+                                        <i class="ti-comment-alt"></i>
+                                        Tin Tức
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav__mobile-link">
+                                        <i class="ti-heart"></i>
+                                        Học Viện
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav__mobile-link">
+                                        <i class="ti-settings"></i>
+                                        Công Cụ
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- Banner -->
+           <div class="container__banner l-12 m-12 c-12">
+               <a href="" class="container__banner--link">
+                   <img src="https://fo4.garena.vn/wp-content/uploads/2020/12/VNL_kv_1920x600-1.png" alt="Banner VN Legend" class="container__banner--img">
+               </a>            
+           </div>
+
+           <!-- Member ship -->
+           <div class="container__member">
+               <div class="grid wide">
+                   <div class="row sm-gutter">
+                       <div class="col container__member-info">
+                           <ul class="l-4 m-12 container__member-list">
+                               <li class="container__member-item">
+                                   <a href="" class="container__member-link container__member-down">
+                                       <i class="container__member-icon ti-download"></i>
+                                       TẢI MIỄN PHÍ
+                                   </a>
+                               </li>
+                               <li class="container__member-item">
+                                   <a href="" class="container__member-link container__member-user">
+                                       <i class="container__member-icon ti-user"></i>
+                                       ĐĂNG KÝ TÀI KHOẢN
+                                   </a>
+                                </li>
+                                <li class="container__member-item">
+                                    <a href="" class="container__member-link container__member-money">
+                                        <i class="container__member-icon ti-money"></i>
+                                        NẠP FC/MC
+                                    </a>
+                                </li>
+                           </ul>
+                           <div class="l-8 m-12 container__member-slider">
+                               <div class="container__member-slider--item">
+                                   <a href="" class="container__member-silder--link">
+                                       <img src="./assets/img/KV-BallDrop_956x307.png" alt="" class="container__member-img">
+                                   </a>
+                               </div>
+                               <div class="container__owl-dots">
+                                    <button role="button" class="container__owl-dot">
+                                        <span></span>
+                                    </button>
+                                    <button role="button" class="container__owl-dot">
+                                        <span></span>
+                                    </button>
+                                    <button role="button" class="container__owl-dot">
+                                        <span></span>
+                                    </button>
+                                    <button role="button" class="container__owl-dot">
+                                        <span></span>
+                                    </button>
+                                    <button role="button" class="container__owl-dot">
+                                        <span></span>
+                                    </button>
+                                    <button role="button" class="container__owl-dot">
+                                        <span></span>
+                                    </button>
+                                    <button role="button" class="container__owl-dot">
+                                        <span></span>
+                                    </button>
+                                    <button role="button" class="container__owl-dot">
+                                        <span></span>
+                                    </button>
+                               </div>
+                           </div>
+                           <ul class="container__member-footer--list">
+                                <li class="container__member-footer--item">
+                                    <a href="" class="container__member-footer--link">
+                                        <i class="container__member-footer--icon ti-headphone-alt"></i>
+                                        Hỗ Trợ
+                                    </a>
+                                </li>
+                                <li class="container__member-footer--item">
+                                    <a href="" class="container__member-footer--link">
+                                        <i class="container__member-footer--icon ti-exchange-vertical"></i>
+                                        Ranking
+                                    </a>
+                                </li>
+                                <li class="container__member-footer--item">
+                                    <a href="" class="container__member-footer--link">
+                                        <i class="container__member-footer--icon ti-crown"></i>
+                                        Vip member
+                                    </a>
+                                </li>
+                                <li class="container__member-footer--item">
+                                    <a href="" class="container__member-footer--link">
+                                        <i class="container__member-footer--icon ti-key"></i>
+                                        Reset pass 2
+                                    </a>
+                                </li>
+                                <li class="container__member-footer--item">
+                                    <a href="" class="container__member-footer--link">
+                                        <i class="container__member-footer--icon ti-pencil-alt"></i>
+                                        Nhập code
+                                    </a>
+                                </li>
+                                <li class="container__member-footer--item">
+                                    <a href="" class="container__member-footer--link">
+                                        <i class="container__member-footer--icon ti-lock"></i>
+                                        Khoá TK khẩn cấp
+                                    </a>
+                                </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- Events -->
+           <div class="container__events">
+               <div class="grid wide">
+                   <div class="container__events-titles">
+                       <h2 class="container__events-titles--content">
+                        CÁC SỰ KIỆN ĐANG DIỄN RA
+                       </h2>
+                   </div>
+                </div>
+                <div class="container__events-box">
+                    <div class="grid wide">
+                        <div class="row sm-gutter container__events-box--s">
+                            <div class="col l-3 m-4 c-6">
+                                <div class="container__events-info">
+                                    <div class="container__events-list">
+                                        <div class="container__events-item">
+                                            <a href="" class="container__events-link">
+                                                <div class="container__events-item--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/KV-BallDrop_1080-320x320.png);">
+                                                    
+                                                </div>
+                                                <h4 class="container__events-item--name">
+                                                    BẬT NHẢ CỰC HAY, HỐT NGAY QUÀ KHỦNG, SỞ HỮU NGAY EBS, VNL VÀ ICONS CHẤT LƯỢNG
+                                                </h4>
+                                                <div class="container__events-item--description">
+                                                    SÂN CỎ RỰC LỬA đã quay trở lại với rất nhiều phần quà được các HLV mong chờ như gói EBS, VNL hay gói ICONS và các thẻ siêu sao +8 các mùa.
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="container__events-info">
+                                    <div class="container__events-list">
+                                        <div class="container__events-item">
+                                            <a href="" class="container__events-link">
+                                                <div class="container__events-item--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/KV_1080x1080-320x320.png);">
+                                                    
+                                                </div>
+                                                <h4 class="container__events-item--name">
+                                                    TRAINING PLAYERS ĐÃ TRỞ LẠI: HUẤN LUYỆN SIÊU SAO – FREE QUÀ CẢ THÁNG
+                                                </h4>
+                                                <div class="container__events-item--description">
+                                                    Với sự trở lại vào tháng 9 này, Training Players sẽ tiếp tục mang lại các phần quà hấp dẫn và miễn phí cho các HLV, tất cả những gì bạn cần làm là: CHƠI THƯỜNG XUYÊN.
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="container__events-info">
+                                    <div class="container__events-list">
+                                        <div class="container__events-item">
+                                            <a href="" class="container__events-link">
+                                                <div class="container__events-item--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2020/12/KV-Monopoly_New08-1080-320x320.png);">
+                                                    
+                                                </div>
+                                                <h4 class="container__events-item--name">
+                                                    CƠ HỘI SỚM NHẤT ĐỂ SỞ HỮU MÙA THẺ EBS CÙNG NHỮNG HUYỀN THOẠI VIỆT NAM CỰC ĐỈNH
+                                                </h4>
+                                                <div class="container__events-item--description">
+                                                    Tham gia Tỷ Phú với lượt chơi FREE mỗi ngày là các HLV vừa có thể trải nghiệm những siêu sao mới nhất mùa EBS lại vừa có thể sở hữu những huyền thoại số một của Việt Nam như Công Vinh, Hồng Sơn, Huỳnh Đức,...
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-4 c-6">
+                                <div class="container__events-info">
+                                    <div class="container__events-list">
+                                        <div class="container__events-item">
+                                            <a href="" class="container__events-link">
+                                                <div class="container__events-item--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/08/KV-VNLCamp-1080x1080-1-320x320.png);">
+                                                    
+                                                </div>
+                                                <h4 class="container__events-item--name">
+                                                    [CUỘC THI SÁNG TẠO VIDEO] TÁI HIỆN KHOẢNH KHẮC HUY HOÀNG BÓNG ĐÁ VIỆT
+                                                </h4>
+                                                <div class="container__events-item--description">
+                                                    Nhằm giúp các HLV vừa có cơ hội trải nghiệm các Vietnam Legend, vừa có một sân chơi thú vị cùng các HLV khác, FIFA Online 4 quyết định tổ chức cuộc thi sáng tạo video “Tái hiện khoảnh khắc huy hoàng bóng đá Việt” cùng với hệ thống giải thưởng lớn nhất từ trước đến giờ.
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container__events--owl-dots">
+                                <button role="button" class="container__owl-dot container__owl-dot--black">
+                                    <span></span>
+                                </button>
+                                <button role="button" class="container__owl-dot container__owl-dot--white">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="container__events--nav">
+                            <button type="button" class="container__events--disabled">
+                                <span></span>
+                            </button>
+                            <button type="button" class="container__events--next">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+           </div>
+
+           <!-- News -->
+           <div class="container__news">
+               <div class="container__news-main">
+                   <div class="grid wide">
+                       <h2 class="container__news-title">
+                        Các tin nổi bật
+                       </h2>                               
+                       <ul class="container__news-tabs--list nav">
+                            <li class="container__news-tabs--item " >
+                                <a href="" class="container__news-tabs--link container__news-tabs--active">
+                                    SỰ KIỆN
+                                </a>
+                            </li>
+                            <li class="container__news-tabs--item " >
+                                <a href="" class="container__news-tabs--link">
+                                    VẬT PHẨM
+                                </a>
+                            </li>
+                            <li class="container__news-tabs--item " >
+                                <a href="" class="container__news-tabs--link container__news-tabs--3">
+                                    GIẢI ĐẤU
+                                </a>
+                            </li>
+                            <li class="container__news-tabs--item" >
+                                <a href="" class="container__news-tabs--view-more">
+                                    <span class="view-more ti-control-forward"></span>
+                                    XEM TẤT CẢ                                       
+                                </a>
+                            </li>                           
+                       </ul>
+                       <div class="row sm-gutter">
+                           <div class="container__news-box">
+                               <div class="col l-3 m-6 container__news-content">
+                                   <div class="container__news-post">
+                                       <a href="" class="container__news-post--link">
+                                           <div class="container__news-post--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/SK-chuyen-so-T9_326.png);"></div>
+                                           <div class="container__news-post--info">
+                                               <h3 class="container__news-post--date">
+                                                   09.09.2021
+                                               </h3>
+                                               <h2 class="container__news-post--title">
+                                                [SỰ KIỆN ĐẶC BIỆT THÁNG 9] CHUYỂN SÒ SANG FC/ MC – Nhanh chóng săn đón những siêu sao mùa EBS
+                                               </h2>
+                                               <div class="container__news-post--description">
+                                                Từ ngày 09/09 - 13/09, Sự kiện chuyển Sò sang FC/ MC chính thức ra mắt nhằm giúp các HLV có thêm cơ hội sở hữu những ngôi sao mùa EBS.
+                                               </div>
+                                           </div>
+                                       </a>
+                                   </div>
+                               </div>
+                               <div class="col l-3 m-6 container__news-content">
+                                   <div class="container__news-post">
+                                       <a href="" class="container__news-post--link">
+                                           <div class="container__news-post--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/tnail-1.png);"></div>
+                                           <div class="container__news-post--info">
+                                               <h3 class="container__news-post--date">
+                                                   09.09.2021
+                                               </h3>
+                                               <h2 class="container__news-post--title">
+                                                CÔNG BỐ KẾT QUẢ CUỘC THI “GỬI LỜI CHÚC, ĐÓN VINH QUANG CHO ĐTVN” CÙNG FIFA ONLINE 4
+                                               </h2>
+                                               <div class="container__news-post--description">
+                                                Chào các HLV, Cuộc thi “Gửi lời chúc, đón vinh quang cho ĐTVN” là một cuộc thi được các HLV ủng hộ rất đông đảo vì đây là dịp để anh em bày tỏ tình […]
+                                               </div>
+                                           </div>
+                                       </a>
+                                   </div>
+                               </div>
+                               <div class="col l-3 m-6 container__news-content">
+                                   <div class="container__news-post">
+                                       <a href="" class="container__news-post--link">
+                                           <div class="container__news-post--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/KV-BallDrop_326x183.png);"></div>
+                                           <div class="container__news-post--info">
+                                               <h3 class="container__news-post--date">
+                                                   06.09.2021
+                                               </h3>
+                                               <h2 class="container__news-post--title">
+                                                SÂN CỎ RỰC LỬA THÁNG 9 TRỞ LẠI: BẬT NHẢ CỰC HAY, HỐT NGAY QUÀ KHỦNG, SỞ HỮU NGAY EBS, VNL […]
+                                               </h2>
+                                               <div class="container__news-post--description">
+                                                SÂN CỎ RỰC LỬA đã quay trở lại với rất nhiều phần quà được các HLV mong chờ như gói EBS, VNL hay gói ICONS và các thẻ siêu sao +8 các mùa.
+                                               </div>
+                                           </div>
+                                       </a>
+                                   </div>
+                               </div>
+                               <div class="col l-3 m-6 container__news-content">
+                                   <div class="container__news-post">
+                                       <a href="" class="container__news-post--link">
+                                           <div class="container__news-post--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/326x183.png);"></div>
+                                           <div class="container__news-post--info">
+                                               <h3 class="container__news-post--date">
+                                                   09.09.2021
+                                               </h3>
+                                               <h2 class="container__news-post--title">
+                                                TRAINING PLAYERS ĐÃ TRỞ LẠI: HUẤN LUYỆN SIÊU SAO – FREE QUÀ CẢ THÁNG
+                                               </h2>
+                                               <div class="container__news-post--description">
+                                                Chào các HLV, Training Players – Huấn luyện siêu sao luôn là một trong những sự kiện được rất nhiều HLV “cày chay” yêu thích. Phần vì có rất nhiều quà tặng, phần vì đây […]
+                                               </div>
+                                           </div>
+                                       </a>
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="container__news-pagination">
+                                <ul class="pagination-list">
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link pagination-item--active">1</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link pagination-link--white">2</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link pagination-link--white">3</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link pagination-link--white">4</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link pagination-link--white">5</a>
+                                    </li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- Videos -->
+           <div class="container__videos">
+               <div class="container__videos-box">
+                   <div class="grid wide">
+                       <div class="row">
+                           <div class="container__videos-top">
+                               <!-- Shop -->
+                               <div class="col l-9 ">
+                                   <div class="container__videos-shop">
+                                       <h2 class="container__videos-shop--title">VẬT PHẨM HOT</h2>
+                                       <div class="container__videos-shop--slider">
+                                            <div class="container__videos-shop--item">
+                                                <a href="" class="container__videos-shop--link">
+                                                    <img src="./assets/img/KV-BallDrop_956x307_1.png" alt="" class="container__videos-shop--img">
+                                                </a>
+                                            </div>
+                                           <div class="container__owl-dots">
+                                                <button role="button" class="container__owl-dot">
+                                                    <span></span>
+                                                </button>
+                                                <button role="button" class="container__owl-dot">
+                                                    <span></span>
+                                                </button>
+                                                <button role="button" class="container__owl-dot">
+                                                    <span></span>
+                                                </button>
+                                                <button role="button" class="container__owl-dot">
+                                                    <span></span>
+                                                </button>
+                                                <button role="button" class="container__owl-dot">
+                                                    <span></span>
+                                                </button>
+                                                <button role="button" class="container__owl-dot">
+                                                    <span></span>
+                                                </button>
+                                                <button role="button" class="container__owl-dot">
+                                                    <span></span>
+                                                </button>                                 
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col l-3">
+                                   <ul class="container__videos-menu">
+                                       <li class="container__videos-item">
+                                            <a href="" class="container__videos-links container__videos-money">
+                                                <i class="container__videos-icon ti-money"></i>
+                                                Nạp FC/MC
+                                            </a>
+                                       </li>
+                                       <li class="container__videos-item">
+                                            <a href="" class="container__videos-links container__videos-bookmark">
+                                                <i class="container__videos-icon ti-bookmark-alt"></i>
+                                                Hướng dẫn nạp
+                                            </a>
+                                       </li>
+                                       <li class="container__videos-item">
+                                            <a href="" class="container__videos-links container__videos-crown">
+                                                <i class="container__videos-icon ti-crown"></i>
+                                                Vip membership
+                                            </a>
+                                       </li>
+                                   </ul>
+                               </div>
+                           </div>
+
+                           <!-- Videos Note -->
+                           <div class="container__videos-bottom">
+                               <h2 class="container__videos-title">
+                                   VIDEO NỔI BẬT
+                               </h2>
+                               <div class="container__videos-main">
+                                   <div class="col l-8 container__videos-main--default">
+                                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/1efMlEguq78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                   </div>
+                                   <div class="col l-4">
+                                    <div class="container__videos-main--list">
+                                        <div class="container__videos-main--item">
+                                            <a href="/" class="container__videos-main--link">
+                                                <div class="container__videos-main--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/Thumnails5-TOP5-1920-1-326x183.png);"></div>
+                                            </a>
+                                            <div class="container__videos-main--content">
+                                                <h4 class="container__videos-main--name">
+                                                    TOP 5 BẢN NÂNG CẤP EBS ĐÁNG GIÁ TRONG FIFA ONLINE 4 ft Tuấn Tiền Tỉ
+                                                </h4>
+                                                <div class="container__videos-main--date">11.09.2021</div>
+                                                <div class="container__videos-main--channel">
+                                                    <a href="https://www.youtube.com/channel/UCrCqu1n0H52uGETAoSmgNdQ">
+                                                        EA Sports FIFA Online 4 Vietnam
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__videos-main--item">
+                                            <a href="/" class="container__videos-main--link">
+                                                <div class="container__videos-main--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/Thumnails5-TOP5-1920-326x183.png);"></div>
+                                            </a>
+                                            <div class="container__videos-main--content">
+                                                <h4 class="container__videos-main--name">
+                                                    TOP 5 KHOẢNH KHẮC HUY HOÀNG CỦA VIETNAM LEGENDS ft Tuấn Tiền Tỉ – FIFA Online 4
+                                                </h4>
+                                                <div class="container__videos-main--date">03.09.2021</div>
+                                                <div class="container__videos-main--channel">
+                                                    <a href="https://www.youtube.com/channel/UCrCqu1n0H52uGETAoSmgNdQ">
+                                                        EA Sports FIFA Online 4 Vietnam
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__videos-main--item">
+                                            <a href="/" class="container__videos-main--link">
+                                                <div class="container__videos-main--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/08/FO4360_thumb005_1920x1080-326x183.png);"></div>
+                                            </a>
+                                            <div class="container__videos-main--content">
+                                                <h4 class="container__videos-main--name">
+                                                    FO4 360 #05 – VNL & EBS CHÍNH THỨC CẬP BẾN | SỰ KIỆN ĐỒNG HÀNH CÙNG ĐỘI TUYỂN VN 
+                                                </h4>
+                                                <div class="container__videos-main--date">01.09.2021</div>
+                                                <div class="container__videos-main--channel">
+                                                    <a href="https://www.youtube.com/channel/UCrCqu1n0H52uGETAoSmgNdQ">
+                                                        EA Sports FIFA Online 4 Vietnam
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__videos-main--item">
+                                            <a href="/" class="container__videos-main--link">
+                                                <div class="container__videos-main--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/08/KV2-EBS-1920-Copy-326x183.png);"></div>
+                                            </a>
+                                            <div class="container__videos-main--content">
+                                                <h4 class="container__videos-main--name">
+                                                    [EUROPEAN BEST STARS] MÙA THẺ MỚI – DIỆN MẠO MỚI – CẢM HỨNG MỚI
+                                                </h4>
+                                                <div class="container__videos-main--date">30.08.2021</div>
+                                                <div class="container__videos-main--channel">
+                                                    <a href="https://www.youtube.com/channel/UCrCqu1n0H52uGETAoSmgNdQ">
+                                                        EA Sports FIFA Online 4 Vietnam
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__videos-main--item">
+                                            <a href="/" class="container__videos-main--link">
+                                                <div class="container__videos-main--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/Thumnails5-TOP5-1920-1-326x183.png);"></div>
+                                            </a>
+                                            <div class="container__videos-main--content">
+                                                <h4 class="container__videos-main--name">
+                                                    TOP 5 BẢN NÂNG CẤP EBS ĐÁNG GIÁ TRONG FIFA ONLINE 4 ft Tuấn Tiền Tỉ
+                                                </h4>
+                                                <div class="container__videos-main--date">11.09.2021</div>
+                                                <div class="container__videos-main--channel">
+                                                    <a href="https://www.youtube.com/channel/UCrCqu1n0H52uGETAoSmgNdQ">
+                                                        EA Sports FIFA Online 4 Vietnam
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__videos-main--item">
+                                            <a href="/" class="container__videos-main--link">
+                                                <div class="container__videos-main--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/Thumnails5-TOP5-1920-1-326x183.png);"></div>
+                                            </a>
+                                            <div class="container__videos-main--content">
+                                                <h4 class="container__videos-main--name">
+                                                    TOP 5 BẢN NÂNG CẤP EBS ĐÁNG GIÁ TRONG FIFA ONLINE 4 ft Tuấn Tiền Tỉ
+                                                </h4>
+                                                <div class="container__videos-main--date">11.09.2021</div>
+                                                <div class="container__videos-main--channel">
+                                                    <a href="https://www.youtube.com/channel/UCrCqu1n0H52uGETAoSmgNdQ">
+                                                        EA Sports FIFA Online 4 Vietnam
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__videos-main--item">
+                                            <a href="/" class="container__videos-main--link">
+                                                <div class="container__videos-main--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/Thumnails5-TOP5-1920-1-326x183.png);"></div>
+                                            </a>
+                                            <div class="container__videos-main--content">
+                                                <h4 class="container__videos-main--name">
+                                                    TOP 5 BẢN NÂNG CẤP EBS ĐÁNG GIÁ TRONG FIFA ONLINE 4 ft Tuấn Tiền Tỉ
+                                                </h4>
+                                                <div class="container__videos-main--date">11.09.2021</div>
+                                                <div class="container__videos-main--channel">
+                                                    <a href="https://www.youtube.com/channel/UCrCqu1n0H52uGETAoSmgNdQ">
+                                                        EA Sports FIFA Online 4 Vietnam
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__videos-main--item">
+                                            <a href="/" class="container__videos-main--link">
+                                                <div class="container__videos-main--img" style="background-image: url(https://fo4.garena.vn/wp-content/uploads/2021/09/Thumnails5-TOP5-1920-1-326x183.png);"></div>
+                                            </a>
+                                            <div class="container__videos-main--content">
+                                                <h4 class="container__videos-main--name">
+                                                    TOP 5 BẢN NÂNG CẤP EBS ĐÁNG GIÁ TRONG FIFA ONLINE 4 ft Tuấn Tiền Tỉ
+                                                </h4>
+                                                <div class="container__videos-main--date">11.09.2021</div>
+                                                <div class="container__videos-main--channel">
+                                                    <a href="https://www.youtube.com/channel/UCrCqu1n0H52uGETAoSmgNdQ">
+                                                        EA Sports FIFA Online 4 Vietnam
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+
+        <div class="footer">
+            <div class="grid wide">
+                <div class="footer__wrap">
+                    <div class="footer__left">
+                        <img src="https://fo4.garena.vn/wp-content/themes/fifa-online-4/img/logos.png" alt="">
+                    </div>
+                    <div class="footer__content">
+                        © 201​8​ Electronic Arts Inc. EA, EA SPORTS, and the EA SPORTS logo are trademarks of Electronic Arts Inc. Official FIFA licensed product. © FIFA name and FIFA's Official Licensed Product Logo are copyrights and/or trademarks of FIFA. All rights reserved. Manufactured under license by Electronic Arts Inc. The use of real player names and likenesses is authorized by FIFPro Commercial Enterprises BV. The Premier League Logo © The Football Association Premier League Limited 2018. The Premier League Logo is a trademark of the Football Association Premier League Limited which is registered in the UK and other jurisdictions. The Premier League Club logos are copyright works and registered trademarks of the respective Clubs. All are used with the kind permission of their respective owners. Manufactured under license from the Football Association Premier League Limited. No association with nor endorsement of this product by any player is intended or implied by the license granted by the Football Association Premier League Limited to Electronic Arts. All other trademarks are the property of their respective owners.
+                    </div>
+                    <div class="footer__right">
+                        <img src="https://fo4.garena.vn/wp-content/themes/fifa-online-4/img/icon-age.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
